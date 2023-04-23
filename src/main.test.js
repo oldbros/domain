@@ -5,4 +5,5 @@ import * as domain from './main.js';
 
 test('Check exports', () => {
   assert.ok('createSimpleDf' in domain);
+  assert.ok('createAdvancedDf' in domain);
 });
