@@ -1,3 +1,5 @@
+Documentation / [Modules](modules.md)
+
 # library-template
 
 ![Documented](/docs/coverage.svg "Documented")

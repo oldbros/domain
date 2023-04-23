@@ -12,15 +12,24 @@ export class DtsClass {
     this.fs.createStream = (args) => args;
   }
 
-  /** @param {Buffer} buf */
+  /**
+   * Write
+   * @param {Buffer} buf
+   */
   write(buf) {
     this.fs.createStream(buf);
     return Promise.resolve();
   }
 }
 
-/** @type {dtsFn} */
+/**
+ * Sum
+ * @type {dtsFn}
+ */
 export const dtsSum = (a, b) => a + b;
 
-/** @returns {DtsType} */
+/**
+ * Random
+ * @returns {DtsType}
+ */
 export const dtsRandom = () => Math.floor(Math.random() * 2) === 1 ? 'type' : 'example';

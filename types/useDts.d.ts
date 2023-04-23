@@ -7,10 +7,16 @@
 /** @implements {IDts} */
 export class DtsClass implements IDts {
     fs: {};
-    /** @param {Buffer} buf */
+    /**
+     * Write
+     * @param {Buffer} buf
+     */
     write(buf: Buffer): Promise<void>;
 }
-/** @type {dtsFn} */
+/**
+ * Sum
+ * @type {dtsFn}
+ */
 export const dtsSum: dtsFn;
 export function dtsRandom(): DtsType;
 /**
