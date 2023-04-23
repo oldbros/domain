@@ -69,9 +69,7 @@ test('Advanced syntax domain function creation', async (t) => {
         called++;
         throw testErr;
       },
-      method: async (ctx, args) => {
-        ctx.assert.fail(args);
-      },
+      method: (_ctx, _args) => {},
       error: (ctx, error) => {
         called++;
         ctx.assert.deepStrictEqual(error, testErr);

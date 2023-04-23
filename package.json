@@ -7,7 +7,8 @@
   "type": "module",
   "scripts": {
     "check": "npx tsc --project tsconfig.json",
-    "types": "rm -rf types && npx tsc --project tsconfig.types.json",
+    "post:check": "npx tsc --project tsconfig.post.json",
+    "types": "rm -rf types && npx tsc --project tsconfig.types.json && npm run post:check",
     "lint": "eslint .",
     "fmt": "eslint --fix .",
     "typedoc": "npx typedoc --plugin typedoc-plugin-coverage --coverageLabel docs --plugin typedoc-plugin-markdown --entryPointStrategy resolve packages ./src/main.js",
@@ -46,6 +47,6 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@oldbros/shiftjs": "^1.1.0"
+    "@oldbros/shiftjs": "^1.1.2"
   }
 }

@@ -29,4 +29,4 @@ Creates a simple domain function by injecting Context to a given function
 
 #### Defined in
 
-domain/simple.js:13
+[domain/simple.js:13](https://github.com/oldbros/domain/blob/main/src/domain/simple.js#L13)
